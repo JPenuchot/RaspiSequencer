@@ -150,7 +150,7 @@ namespace rss {
      */
     struct MIDINote {
         unsigned char note, vel;
-        unsigned int len;
+        float len;
     };
 }
 

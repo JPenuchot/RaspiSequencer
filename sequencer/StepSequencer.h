@@ -21,7 +21,13 @@ namespace rss {
 		unsigned int iSeqSize = 64;
 
 	public:
+		/**
+		 * Sets the tempo. Accepts negative values (Will make the sequencer play in reverse).
+		 */
 		void setTempo(float fTempo);
+		/**
+		 * Returns the tempo as a float.
+		 */
 		float getTempo();
 		/**
 		 * Triggers the id-modulus-n-th note in the sequence (Giving an id above the number of notes won't crash it).

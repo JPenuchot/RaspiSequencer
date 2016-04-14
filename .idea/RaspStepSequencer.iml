@@ -7,7 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/core/MIDINote.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sequencer/StepSequencer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sequencer/NoteIterator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sequencer/SeqNote.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sequencer/NoteIterator.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sequencer/StepSequencer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>

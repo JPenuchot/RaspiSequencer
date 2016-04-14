@@ -55,7 +55,7 @@ void rss::StepSequencer::setTempo(float fTempo) {
 	if(fTempo < 0)
 		bReverse = true;
 	if(fTempo == 0)
-		this->fTempo = 128.;
+		this->fTempo = 128.f;
 }
 
 float rss::StepSequencer::getTempo() {

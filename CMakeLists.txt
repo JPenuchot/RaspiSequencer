@@ -3,5 +3,5 @@ project(RaspStepSequencer)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp core/MIDINote.h core/MIDIDevice.cpp core/MIDIDevice.h sequencer/StepSequencer.cpp sequencer/StepSequencer.h sequencer/SeqNote.h)
+set(SOURCE_FILES main.cpp core/MIDINote.h core/MIDIDevice.cpp core/MIDIDevice.h sequencer/StepSequencer.cpp sequencer/StepSequencer.h sequencer/SeqNote.h sequencer/NoteIterator.cpp sequencer/NoteIterator.h)
 add_executable(RaspStepSequencer ${SOURCE_FILES})
