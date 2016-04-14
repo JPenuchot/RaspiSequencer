@@ -6,6 +6,9 @@
 #define RASPSTEPSEQUENCER_MIDINOTE_H
 
 namespace rss {
+    /**
+     * Structure for a note that can be played directly by a MIDIDevice class.
+     */
     struct MIDINote {
         unsigned char note, vel;
         unsigned int len;
