@@ -7,7 +7,14 @@
 #include <cmath>
 
 void rss::StepSequencer::trigNote(int id) {
+	//	TODO : Get timestamp
 
+	SeqNote note = vSequence[id % iSeqSize];
+	playNote(note);	//	mDevice.playNote({note.note, note.vel, (float)note.len * 60f / fTempo / .256f});
+
+	//	TODO : Do stuff..?
+
+	//	TODO : Wait until next note
 }
 
 void rss::StepSequencer::playSequence() {
@@ -15,19 +22,19 @@ void rss::StepSequencer::playSequence() {
 }
 
 void rss::StepSequencer::loopSequence(int iNumTimes) {
+	while(iNumTimes == -1){
+		playSequence();
+	}
 
+	for(int i = 0; i < iNumTimes; i++)
+		playSequence();
 }
 
-void rss::StepSequencer::resize(int size) {
-	if(size < iSeqSize){
-		iSeqSize = size;
-		return;
-	}
-	if(size > vSequence.size()){
-		vSequence.resize(size);
-		for(int i = iSeqSize; i < size; i++)
-			vSequence[i] = {0, 0, 0};
-	}
+void rss::StepSequencer::resize(unsigned int size) {
+	//	We don't want to lose notes when downsizing the pattern.
+	if(size > vSequence.size())
+		vSequence.resize(size, {0, 0, 0, false});
+	iSeqSize = size;
 }
 
 void rss::StepSequencer::addNote(SeqNote note) {
@@ -60,26 +67,6 @@ void rss::StepSequencer::setNote(int id, SeqNote note) {
 }
 
 void rss::StepSequencer::playNote(SeqNote note) {
-	mDevice.playNote({note.note, note.vel, (float)note.len * 60f / fTempo / .256f});
+	if(note.on)
+		mDevice.playNote({note.note, note.vel, (float)note.len * 60f / fTempo / .256f});
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

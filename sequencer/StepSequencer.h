@@ -2,6 +2,7 @@
 // Created by jpenuchot on 13/04/16.
 //
 
+
 #ifndef RASPSTEPSEQUENCER_STEPSEQUENCER_H
 #define RASPSTEPSEQUENCER_STEPSEQUENCER_H
 
@@ -37,7 +38,7 @@ namespace rss {
 		/**
 		 * Resizes the sequence without erasing the note buffer, or safely increases its size.
 		 */
-		void resize(int size);
+		void resize(unsigned int size);
 		/**
 		 * Adds a note at the end of the sequence.
 		 */
@@ -53,7 +54,7 @@ namespace rss {
 		/**
 		 * Plays a SeqNote
 		 */
-		void playNote(SeqNote note);d
+		void playNote(SeqNote note);
 	};
 }
 
