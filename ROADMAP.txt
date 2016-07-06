@@ -1,0 +1,6 @@
+Goals :
+    -   Going multi-thread
+    -   Full-featured sequencer architecture
+    -   Play/Pause/Repeat methods
+    -   Base iterator library
+    -   Add iterators through DLLs..?

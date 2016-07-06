@@ -5,7 +5,7 @@
 #ifndef RASPSTEPSEQUENCER_NOTEITERATOR_H
 #define RASPSTEPSEQUENCER_NOTEITERATOR_H
 
-#include "StepSequencer.h"
+#include "../sequencer/StepSequencer.h"
 
 namespace rss{
 	class NoteIterator {
