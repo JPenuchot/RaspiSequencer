@@ -3,19 +3,19 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/sequencer/StepSequencer.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/iterators/NoteIterator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sequencer/SeqNote.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/sequencer/StepSequencer.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/iterators/NoteIterator.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/iterators/Loop.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/iterators/Reverse.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/iterators/Loop.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/iterators/OneShot.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/iterators/Reverse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/iterators/NoteIterator.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/iterators/OneShot.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/core/MIDIDevice.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/iterators/Reverse.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/iterators/NoteIterator.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/iterators/Reverse.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/iterators/Loop.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/core/MIDIDevice.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/core/MIDINote.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/core/MIDIDevice.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
     </content>
@@ -23,14 +23,14 @@
     <orderEntry type="module-library">
       <library name="Header Search Paths">
         <CLASSES>
-          <root url="file://C:/MinGW/lib/gcc/mingw32/4.9.3/include" />
-          <root url="file://C:/MinGW/lib/gcc/mingw32/4.9.3/include-fixed" />
-          <root url="file://C:/MinGW/include" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib64/gcc/x86_64-solus-linux/6.2.0/include-fixed" />
+          <root url="file:///usr/lib64/gcc/x86_64-solus-linux/6.2.0/include" />
         </CLASSES>
         <SOURCES>
-          <root url="file://C:/MinGW/lib/gcc/mingw32/4.9.3/include" />
-          <root url="file://C:/MinGW/lib/gcc/mingw32/4.9.3/include-fixed" />
-          <root url="file://C:/MinGW/include" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib64/gcc/x86_64-solus-linux/6.2.0/include-fixed" />
+          <root url="file:///usr/lib64/gcc/x86_64-solus-linux/6.2.0/include" />
         </SOURCES>
       </library>
     </orderEntry>

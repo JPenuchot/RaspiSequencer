@@ -46,7 +46,7 @@ void rss::StepSequencer::addNote(SeqNote note) {
 		vSequence[iSeqSize - 1] = note;
 }
 
-SeqNote rss::StepSequencer::getNote(int id) {
+rss::SeqNote rss::StepSequencer::getNote(int id) {
 	return vSequence[id % iSeqSize];
 }
 
@@ -68,5 +68,5 @@ void rss::StepSequencer::setNote(int id, SeqNote note) {
 
 void rss::StepSequencer::playNote(SeqNote note) {
 	if(note.on)
-		mDevice.playNote({note.note, note.vel, (float)note.len * 60f / fTempo / .256f});
+		mDevice.playNote({note.note, note.vel, (float)note.len * 60.f / fTempo / .256f});
 }

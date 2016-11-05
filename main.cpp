@@ -7,7 +7,7 @@ int main(void) {
 
    MIDINote note;
 
-   note.note = 60;
+   note.note = NOTE_C4;
    note.vel = 100;
    note.len = 128;
 

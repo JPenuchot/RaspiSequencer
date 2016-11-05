@@ -10,9 +10,9 @@
 namespace rss{
 	class NoteIterator {
 	private:
-		StepSequencer sqSequencer;
+		StepSequencer* sqSequencer;
 	public:
-		NoteIterator(StepSequencer sqSequencer):
+		NoteIterator(StepSequencer* sqSequencer):
 				sqSequencer(sqSequencer){};
 
 		/**
